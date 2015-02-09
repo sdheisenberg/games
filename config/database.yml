@@ -15,7 +15,8 @@ default: &default
   pool: 5
   username: root
   password: root
-  socket: /tmp/mysql.sock
+  host: localhost
+  # commented out to try and resolve Cloud66 issue - socket: /tmp/mysql.sock
 
 development:
   <<: *default
