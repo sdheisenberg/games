@@ -17,7 +17,7 @@ default: &default
   password: root
   # removed to run on EY host: localhost
   # commented out to try and resolve Cloud66 issue - socket: /tmp/mysql.sock
-  socket: /tmp/mysql.sock
+  #socket: /tmp/mysql.sock
 
 development:
   <<: *default
