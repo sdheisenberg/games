@@ -11,4 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
-database.yml
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
