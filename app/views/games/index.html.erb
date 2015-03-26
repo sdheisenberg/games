@@ -2,7 +2,10 @@
 
 <script type="text/javascript">
 
-mixpanel.track("Index Page");
+mixpanel.track('page viewed', {
+    'page name' : document.title,
+    'url' : window.location.pathname
+});
 
 </script>
 
