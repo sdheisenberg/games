@@ -2,39 +2,24 @@
 
 <script type="text/javascript">
 
-mixpanel.track('page viewed', {
+mixpanel.identify('3')
+mixpanel.people.set({
+  "details": "third person",
+  "account": "Nick's Account",
+  "name": "Gerlando Piro"
+})
+
+mixpanel.track("Index Page", {
+  "account": "Nick's Account/Second account"
+});
+
+/*mixpanel.track('page viewed', {
     'page name' : document.title,
     'url' : window.location.pathname
-});
+}); */
 
 </script>
 
-<table>
-  <tr>
-	<th></th>
-    <th>Title</th>
-    <th>Console</th>
-    <th>Year</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @games.each_with_index do |game, i| %>
-  <tr>
-	<td><%= i+1 %>.</td>
-    <td><%= game.title %></td>
-    <td><%= game.console %></td>
-    <td><%= game.year %></td>
-    <td><%= game.description %></td>
-    <td><%= link_to 'Show', game %></td>
-    <td><%= link_to 'Edit', edit_game_path(game) %></td>
-    <td><%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Game', new_game_path %>
+<h1>
+  This is the branched app
+</h1>
